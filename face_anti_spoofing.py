@@ -13,7 +13,7 @@ COUNTER, TOTAL = 0,0
 counter_ok_questions = 0
 counter_ok_consecutives = 0
 limit_consecutives = 3
-limit_questions = 6
+limit_questions = 3
 counter_try = 0
 limit_try = 50 
 
@@ -29,7 +29,7 @@ def show_image(cam,text,color = (0,0,255)):
 
 for i_questions in range(0,limit_questions):
     # genero aleatoriamente pregunta
-    index_question = random.randint(0,5)
+    index_question = random.randint(0,2)
     question = questions.question_bank(index_question)
     
     im = show_image(cam,question)
